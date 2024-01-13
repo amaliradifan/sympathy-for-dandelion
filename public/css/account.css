@@ -1,0 +1,690 @@
+.sign-in {
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sign-in .div {
+    background-color: #1f1f1f;
+    width: 1440px;
+    height: 1515px;
+    position: relative;
+  }
+  
+  .sign-in .group {
+    position: absolute;
+    width: 299px;
+    height: 16px;
+    top: 58px;
+    left: 1018px;
+  }
+  
+  .sign-in .group-2 {
+    position: relative;
+    height: 16px;
+  }
+  
+  .sign-in .account {
+    width: 103px;
+    top: 0;
+    left: 114px;
+    position: absolute;
+    height: 16px;
+  }
+  
+  .sign-in .text-wrapper {
+    top: -1px;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe61b;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-decoration: underline;
+    white-space: nowrap;
+    position: absolute;
+    height: 16px;
+  }
+  
+  .sign-in .cart {
+    width: 52px;
+    top: 0;
+    left: 247px;
+    position: absolute;
+    height: 16px;
+  }
+  
+  .sign-in .text-wrapper-2 {
+    top: -1px;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe61b;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    height: 16px;
+  }
+  
+  .sign-in .search {
+    width: 84px;
+    top: 0;
+    position: absolute;
+    height: 16px;
+    left: 0;
+    border: none;
+    background: none;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe61b;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+    padding: 0;
+    padding-left: 0;
+  }
+  
+  .rectangle input {
+    border: none;
+    background: none;
+    outline: none; /* Menghilangkan garis fokus saat diklik */
+    padding-top: 10px;
+  }
+  
+  /* Menambahkan gaya teks pada input */
+  .rectangle input[type="text"] {
+    font-size: 23px; /* Sesuaikan ukuran teks sesuai keinginan */
+    color: #333; /* Sesuaikan warna teks sesuai keinginan */
+  }
+  
+  .sign-in .group-3 {
+    position: absolute;
+    width: 1181px;
+    height: 149px;
+    top: 1150px;
+    left: 129px;
+  }
+  
+  .sign-in .SFD-logo-white {
+    position: absolute;
+    width: 229px;
+    height: 149px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .sign-in .group-4 {
+    position: absolute;
+    width: 134px;
+    height: 144px;
+    top: 0;
+    left: 429px;
+  }
+  
+  .sign-in .text-wrapper-3 {
+    position: absolute;
+    height: 32px;
+    top: 0;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .group-5 {
+    position: absolute;
+    width: 138px;
+    height: 87px;
+    top: 57px;
+    left: 0;
+  }
+  
+  .sign-in .text-wrapper-4 {
+    position: absolute;
+    height: 29px;
+    top: 0;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .text-wrapper-5 {
+    position: absolute;
+    height: 29px;
+    top: 58px;
+    left: 2px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .text-wrapper-6 {
+    position: absolute;
+    height: 29px;
+    top: 29px;
+    left: 2px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .group-6 {
+    position: absolute;
+    width: 121px;
+    height: 115px;
+    top: 0;
+    left: 761px;
+  }
+  
+  .sign-in .group-7 {
+    position: absolute;
+    width: 123px;
+    height: 58px;
+    top: 57px;
+    left: 0;
+  }
+  
+  .sign-in .text-wrapper-7 {
+    position: absolute;
+    height: 29px;
+    top: 29px;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .group-8 {
+    position: absolute;
+    width: 103px;
+    height: 105px;
+    top: 0;
+    left: 1080px;
+  }
+  
+  .text-wrapper-8 input {
+    border: none;
+    background: none;
+    outline: none; /* Menghilangkan garis fokus saat diklik */
+  }
+  
+  /* Menambahkan gaya teks pada input */
+  .text-wrapper-8 input[type="text"] {
+    font-size: 16px; /* Sesuaikan ukuran teks sesuai keinginan */
+    color: #333; /* Sesuaikan warna teks sesuai keinginan */
+  }
+  
+  .sign-in .group-9 {
+    position: absolute;
+    width: 101px;
+    height: 48px;
+    top: 57px;
+    left: 0;
+  }
+  
+  .sign-in .icon-instagram {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 53px;
+  }
+  
+  .sign-in .icon-whatsapp {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 0;
+  }
+  
+  .sign-in .copyright {
+    position: absolute;
+    height: 58px;
+    top: 1398px;
+    left: 490px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .group-10 {
+    position: absolute;
+    width: 1192px;
+    height: 61px;
+    top: 889px;
+    left: 124px;
+  }
+  
+  .sign-in .group-11 {
+    position: absolute;
+    width: 596px;
+    height: 61px;
+    top: 0;
+    left: 0;
+  }
+  
+  .sign-in .p {
+    position: absolute;
+    height: 29px;
+    top: 32px;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .overlap-group-wrapper {
+    position: absolute;
+    width: 552px;
+    height: 50px;
+    top: 7px;
+    left: 642px;
+  }
+  
+  .sign-in .overlap-group {
+    position: relative;
+    width: 550px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .sign-in .text-wrapper-8 {
+    position: absolute;
+    height: 16px;
+    top: 17px;
+    left: 22px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #1f1f1f80;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .sign-in .vector {
+    position: absolute;
+    width: 27px;
+    height: 20px;
+    top: 15px;
+    left: 502px;
+  }
+  
+  .sign-in .group-12 {
+    position: absolute;
+    width: 264px;
+    height: 16px;
+    top: 58px;
+    left: 122px;
+  }
+  
+  .sign-in .shop {
+    position: absolute;
+    width: 62px;
+    height: 16px;
+    top: 0;
+    left: 98px;
+  }
+  
+  .sign-in .about {
+    position: absolute;
+    width: 74px;
+    height: 16px;
+    top: 0;
+    left: 190px;
+  }
+  
+  .sign-in .home {
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    top: 0;
+    left: 0;
+  }
+  
+  .sign-in .group-13 {
+    position: absolute;
+    width: 577px;
+    height: 465px;
+    top: 224px;
+    left: 433px;
+  }
+  
+  .sign-in .text-wrapper-9 {
+    position: absolute;
+    height: 16px;
+    top: 0;
+    left: 252px;
+    font-family: "Space Grotesk-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffe61b;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .sign-in .group-14 {
+    position: absolute;
+    width: 577px;
+    height: 86px;
+    top: 93px;
+    left: 0;
+  }
+  
+  .sign-in .rectangle {
+    position: absolute;
+    width: 575px;
+    height: 54px;
+    top: 32px;
+    left: 0;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+
+  .sign-in .rectangle input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #1f1f1f;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding: 0;
+    padding-left: 10px; /* Sesuaikan sesuai kebutuhan */
+}
+  
+  .sign-in .text-wrapper-10 {
+    position: absolute;
+    width: 66px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .sign-in .group-15 {
+    position: absolute;
+    width: 577px;
+    height: 86px;
+    top: 209px;
+    left: 0;
+  }
+  
+  .sign-in .text-wrapper-11 {
+    position: absolute;
+    width: 121px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .sign-in .group-16 {
+    position: absolute;
+    width: 577px;
+    height: 100px;
+    top: 365px;
+    left: 0;
+  }
+  
+  .sign-in .don-t-have-an {
+    position: absolute;
+    top: 74px;
+    left: 133px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .sign-in .span {
+    color: #d9d9d9;
+  }
+  
+  .sign-in .text-wrapper-12 {
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+  }
+  
+  .sign-in .text-wrapper-13 {
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe61b;
+  }
+  
+  .text-wrapper-13 a,
+  .text-wrapper-13 a:hover {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Set the color to inherit from the parent */
+    outline: none; /* Remove the blue outline on click */
+  }
+  
+  .text-wrapper-13 a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: inherit; /* Set the color on hover to inherit from the parent */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .sign-in .div-wrapper {
+    position: absolute;
+    width: 577px;
+    height: 54px;
+    top: 0;
+    left: 0;
+  }
+  
+  body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #1f1f1f;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #1f1f1f;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    font-family: "Space Grotesk-Bold", Helvetica;
+  }
+  
+  .navbar .navbar-nav,
+  .navbar .navbar-extra {
+    display: flex;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #ffe61b;
+  }
+  .navbar .navbar-nav a,
+  .navbar .navbar-extra a {
+    color: #ffe61b;
+    display: inline-block;
+    font-size: 23px;
+    margin: 0 1rem;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navbar .navbar-nav a.active::after,
+  .navbar .navbar-extra a.active::after,
+  .navbar .navbar-nav a:hover::after,
+  .navbar .navbar-extra a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffe61b;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .navbar .navbar-nav a.active::after,
+  .navbar .navbar-extra a.active::after {
+    transform: scaleX(1);
+    transition: transform 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after,
+  .navbar .navbar-extra a:hover::after {
+    transform: scaleX(1);
+    transition: transform 0.2s linear;
+  }
+  
+  .navbar .navbar-extra {
+    margin-left: auto;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: #ffe61b;
+  }
+  
+  .sign-in .overlap-group-2 {
+    position: relative;
+    width: 575px;
+    height: 54px;
+    background-color: #ffe61b;
+    border-radius: 10px;
+  }
+
+  .overlap-group-2:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .sign-in .text-wrapper-14 {
+    position: absolute;
+    width: 69px;
+    height: 17px;
+    top: 19px;
+    left: 253px;
+    font-family: "Space Grotesk-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .frame {
+    background-color: #1f1f1fe6;
+    display: flex;
+    flex-direction: column; /* Menambahkan flex direction column */
+    align-items: center; /* Menyusun konten di tengah secara horizontal */
+    justify-content: center; /* Menyusun konten di tengah secara vertikal */
+    width: 400px;
+    height: 218px;
+    position: fixed; /* Menggunakan posisi tetap */
+    top: 50%; /* Menyusun di tengah secara vertikal */
+    left: 50%; /* Menyusun di tengah secara horizontal */
+    transform: translate(-50%, -50%); /* Menggeser elemen ke tengah */
+  }
+  
+  .frame .div {
+    background-color: #1f1f1fe6;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: #b73737;
+    width: 100%; /* Mengisi lebar 100% dari parent */
+    height: 100%; /* Mengisi tinggi 100% dari parent */
+    position: relative;
+    display: flex; /* Menambahkan display flex */
+    flex-direction: column; /* Menambahkan flex direction column */
+    align-items: center; /* Menyusun konten di tengah secara horizontal */
+    justify-content: center; /* Menyusun konten di tengah secara vertikal */
+  }
+  
+  .frame .close-square {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    top: 28px;
+    left: 173px;
+  }
+  
+  .frame .text-wrapper-20 {
+    position: absolute;
+    width: 274px;
+    height: 87px;
+    top: 96px;
+    left: 60px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
