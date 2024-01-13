@@ -1,0 +1,1042 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #1f1f1f;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #1f1f1f;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    font-family: "Space Grotesk-Bold", Helvetica;
+  }
+  
+  .navbar .navbar-nav,
+  .navbar .navbar-extra {
+    display: flex;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #a6a6a6;
+  }
+  .navbar .navbar-nav a,
+  .navbar .navbar-extra a {
+    color: #ffe61b;
+    display: inline-block;
+    font-size: 23px;
+    margin: 0 1rem;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navbar .navbar-nav a.active::after,
+  .navbar .navbar-extra a.active::after,
+  .navbar .navbar-nav a:hover::after,
+  .navbar .navbar-extra a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffe61b;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .navbar .navbar-nav a.active::after,
+  .navbar .navbar-extra a.active::after {
+    transform: scaleX(1);
+    transition: transform 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after,
+  .navbar .navbar-extra a:hover::after {
+    transform: scaleX(1);
+    transition: transform 0.2s linear;
+  }
+  
+  .navbar .navbar-extra {
+    margin-left: auto;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: #a6a6a6;
+  }
+  
+  .shop-product .group {
+    position: absolute;
+    width: 299px;
+    height: 16px;
+    top: 58px;
+    left: 1018px;
+  }
+  
+  .shop-product .group-2 {
+    position: relative;
+    height: 16px;
+  }
+  
+  .shop-product .account {
+    width: 103px;
+    top: 0;
+    left: 114px;
+    position: absolute;
+    height: 16px;
+  }
+  
+  .shop-product .text-wrapper {
+    top: -1px;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe61b;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    height: 16px;
+  }
+  
+  .shop-product .cart {
+    width: 52px;
+    top: 0;
+    left: 247px;
+    position: absolute;
+    height: 16px;
+  }
+  
+  .shop-product .search {
+    width: 84px;
+    top: 0;
+    position: absolute;
+    height: 16px;
+    left: 0;
+    border: none;
+    background: none;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe61b;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+    padding: 0;
+    padding-left: 0;
+  }
+  
+  .shop-product .group-3 {
+    position: absolute;
+    width: 1181px;
+    height: 149px;
+    top: 2616px;
+    left: 128px;
+  }
+  
+  .shop-product .SFD-logo-white {
+    position: absolute;
+    width: 229px;
+    height: 149px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .shop-product .group-4 {
+    position: absolute;
+    width: 134px;
+    height: 144px;
+    top: 0;
+    left: 429px;
+  }
+  
+  .shop-product .text-wrapper-2 {
+    position: absolute;
+    height: 32px;
+    top: 0;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .group-5 {
+    position: absolute;
+    width: 138px;
+    height: 87px;
+    top: 57px;
+    left: 0;
+  }
+  
+  .shop-product .text-wrapper-3 {
+    height: 29px;
+    top: 0;
+    font-size: 22.5px;
+    text-align: center;
+    line-height: normal;
+    position: absolute;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .text-wrapper-4 {
+    position: absolute;
+    height: 29px;
+    top: 58px;
+    left: 2px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .text-wrapper-5 {
+    height: 29px;
+    top: 29px;
+    left: 2px;
+    font-size: 22.5px;
+    text-align: center;
+    line-height: normal;
+    position: absolute;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .group-6 {
+    position: absolute;
+    width: 121px;
+    height: 144px;
+    top: 0;
+    left: 761px;
+  }
+  
+  .shop-product .group-7 {
+    position: absolute;
+    width: 125px;
+    height: 87px;
+    top: 57px;
+    left: 0;
+  }
+  
+  .shop-product .text-wrapper-6 {
+    position: absolute;
+    height: 29px;
+    top: 29px;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .text-wrapper-7 {
+    position: absolute;
+    height: 29px;
+    top: 58px;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .group-8 {
+    position: absolute;
+    width: 103px;
+    height: 105px;
+    top: 0;
+    left: 1080px;
+  }
+  
+  .text-wrapper-8 input {
+    border: none;
+    background: none;
+    outline: none; /* Menghilangkan garis fokus saat diklik */
+  }
+  
+  /* Menambahkan gaya teks pada input */
+  .text-wrapper-8 input[type="text"] {
+    font-size: 16px; /* Sesuaikan ukuran teks sesuai keinginan */
+    color: #333; /* Sesuaikan warna teks sesuai keinginan */
+  }
+  
+  .shop-product .group-9 {
+    position: absolute;
+    width: 101px;
+    height: 48px;
+    top: 57px;
+    left: 0;
+  }
+  
+  .shop-product .icon-instagram {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 53px;
+  }
+  
+  .shop-product .icon-whatsapp {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 0;
+  }
+  
+  .shop-product .copyright {
+    position: absolute;
+    height: 58px;
+    top: 2864px;
+    left: 488px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .group-10 {
+    position: absolute;
+    width: 1192px;
+    height: 61px;
+    top: 2355px;
+    left: 123px;
+  }
+  
+  .shop-product .group-11 {
+    position: absolute;
+    width: 596px;
+    height: 61px;
+    top: 0;
+    left: 0;
+  }
+  
+  .shop-product .p {
+    position: absolute;
+    height: 29px;
+    top: 32px;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .overlap-group-wrapper {
+    position: absolute;
+    width: 552px;
+    height: 50px;
+    top: 7px;
+    left: 642px;
+  }
+  
+  .shop-product .overlap-group {
+    position: relative;
+    width: 550px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .shop-product .text-wrapper-8 {
+    position: absolute;
+    height: 16px;
+    top: 17px;
+    left: 22px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #1f1f1f80;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .shop-product .vector {
+    position: absolute;
+    width: 27px;
+    height: 20px;
+    top: 15px;
+    left: 502px;
+  }
+  
+  .shop-product .back {
+    position: absolute;
+    width: 60px;
+    height: 16px;
+    top: 154px;
+    left: 121px;
+  }
+  
+  .shop-product .text-wrapper-9 {
+    width: 60px;
+    height: 8px;
+    top: 3px;
+    color: #d9d9d9;
+    position: absolute;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .shop-product .overlap {
+    position: absolute;
+    width: 1074px;
+    height: 458px;
+    top: 224px;
+    left: 183px;
+  }
+  
+  .shop-product .overlap-wrapper {
+    position: absolute;
+    width: 1074px;
+    height: 458px;
+    top: 0;
+    left: 0;
+  }
+  
+  .shop-product .overlap-2 {
+    position: relative;
+    width: 1080px;
+    height: 458px;
+  }
+  
+  .shop-product .group-12 {
+    position: absolute;
+    width: 1080px;
+    height: 458px;
+    top: 0;
+    left: 0;
+  }
+  
+  .shop-product .group-12 .image {
+    border-radius: 30px;
+  }
+  .shop-product .image {
+    height: 458px;
+    position: absolute;
+    width: 345px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .shop-product .text-wrapper-10 {
+    position: absolute;
+    width: 588px;
+    height: 27px;
+    top: 0;
+    left: 486px;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .shop-product .text-wrapper-11 {
+    width: 215px;
+    height: 27px;
+    top: 57px;
+    left: 486px;
+    position: absolute;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .shop-product .text-wrapper-12 {
+    position: absolute;
+    width: 283px;
+    height: 27px;
+    top: 135px;
+    left: 486px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .shop-product .group-wrapper {
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    top: 403px;
+    left: 486px;
+  }
+  
+  .shop-product .div-wrapper {
+    width: 152px;
+    height: 55px;
+  }
+  
+  .shop-product .overlap-group-2 {
+    position: relative;
+    width: 150px;
+    height: 55px;
+    background-color: #ffe61b;
+    border-radius: 27.5px;
+    cursor: pointer;
+  }
+  
+  .shop-product .text-wrapper-13 {
+    position: absolute;
+    height: 16px;
+    top: 20px;
+    left: 22px;
+    font-family: "Space Grotesk-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .shop-product .group-13 {
+    position: absolute;
+    width: 520px;
+    height: 80px;
+    top: 226px;
+    left: 486px;
+  }
+  
+  .shop-product .s {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+  
+  .shop-product .size-s {
+    position: relative;
+    height: 80px;
+    background-image: url(./img/group-23771.png);
+    background-size: 100% 100%;
+  }
+  
+  .shop-product .text-wrapper-14 {
+    position: absolute;
+    height: 45px;
+    top: 17px;
+    left: 28px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .m {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 110px;
+  }
+  
+  .shop-product .s-wrapper {
+    position: relative;
+    height: 80px;
+    background-color: none;
+    background-size: 100% 100%;
+  }
+  
+  .shop-product .s-2 {
+    position: absolute;
+    height: 45px;
+    top: 17px;
+    left: 24px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .l {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 220px;
+  }
+  
+  .shop-product .size-s-2 {
+    position: relative;
+    height: 80px;
+    background-image: url(./img/image.png);
+    background-size: 100% 100%;
+  }
+  
+  .shop-product .s-3 {
+    position: absolute;
+    height: 45px;
+    top: 17px;
+    left: 29px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .xl {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 330px;
+  }
+  
+  .shop-product .size-s-3 {
+    position: relative;
+    height: 80px;
+    background-image: url(./img/group-23771-3.png);
+    background-size: 100% 100%;
+  }
+  
+  .shop-product .s-4 {
+    position: absolute;
+    height: 45px;
+    top: 17px;
+    left: 18px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .xxl {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 440px;
+  }
+  
+  .shop-product .size-s-4 {
+    position: relative;
+    height: 80px;
+    background-image: url(./img/group-23771-4.png);
+    background-size: 100% 100%;
+  }
+  
+  .shop-product .s-5 {
+    position: absolute;
+    height: 45px;
+    top: 17px;
+    left: 7px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .group-14 {
+    position: absolute;
+    width: 1235px;
+    height: 575px;
+    top: 1580px;
+    left: 102px;
+  }
+  
+  .shop-product .group-14 .image {
+    border-radius: 30px;
+  }
+  
+  .shop-product .group-15 {
+    position: absolute;
+    width: 345px;
+    height: 575px;
+    top: 0;
+    left: 0;
+  }
+  
+  .shop-product .group-12 .image {
+    border-radius: 30px;
+  }
+  
+  .shop-product .img {
+    height: 460px;
+    position: absolute;
+    width: 345px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .shop-product .group-16 {
+    position: absolute;
+    width: 351px;
+    height: 90px;
+    top: 485px;
+    left: 0;
+  }
+  
+  .shop-product .text-wrapper-15 {
+    position: absolute;
+    width: 345px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .shop-product .text-wrapper-16 {
+    width: 93px;
+    height: 16px;
+    top: 37px;
+    font-size: 25px;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .text-wrapper-17 {
+    position: absolute;
+    width: 166px;
+    height: 16px;
+    top: 74px;
+    left: 0;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  
+  .shop-product .group-17 {
+    position: absolute;
+    width: 345px;
+    height: 575px;
+    top: 0;
+    left: 445px;
+  }
+  
+  .shop-product .text-wrapper-18 {
+    height: 16px;
+    top: 37px;
+    left: 0;
+    font-size: 25px;
+    line-height: 16px;
+    white-space: nowrap;
+    position: absolute;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .group-18 {
+    position: absolute;
+    width: 345px;
+    height: 575px;
+    top: 0;
+    left: 890px;
+  }
+  
+  .shop-product .text-wrapper-19 {
+    position: absolute;
+    height: 16px;
+    top: 1513px;
+    left: 626px;
+    font-family: "Space Grotesk-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #d9d9d9;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .shop-product .group-19 {
+    position: absolute;
+    width: 264px;
+    height: 16px;
+    top: 58px;
+    left: 122px;
+  }
+  
+  .shop-product .shop {
+    position: absolute;
+    width: 62px;
+    height: 16px;
+    top: 0;
+    left: 98px;
+  }
+  
+  .shop-product .text-wrapper-20 {
+    position: absolute;
+    height: 16px;
+    top: -1px;
+    left: 0;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe61b;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  
+  .shop-product .about {
+    position: absolute;
+    width: 74px;
+    height: 16px;
+    top: 0;
+    left: 190px;
+  }
+  
+  .shop-product .home {
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    top: 0;
+    left: 0;
+  }
+  
+  .shop-product .text-wrapper-21 {
+    position: absolute;
+    height: 16px;
+    top: 781px;
+    left: 122px;
+    font-family: "Space Grotesk-Bold", Helvetica;
+    font-weight: 700;
+    color: #d9d9d9;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  
+  .shop-product .lorem-ipsum-dolor {
+    position: absolute;
+    width: 1195px;
+    height: 377px;
+    top: 827px;
+    left: 122px;
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .shop-product .table {
+    flex-direction: column;
+    width: 1195px;
+    height: 150px;
+    position: absolute;
+    top: 1285px;
+    left: 122px;
+    background-color: #363636;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #5b5b5b;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  .shop-product .row {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffe61b;
+    overflow: hidden;
+  }
+  
+  .shop-product .cell {
+    background-color: #ffffff0d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #5b5b5b;
+  }
+  
+  .shop-product .content {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .shop-product .text {
+    font-family: "Space Grotesk-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 25px;
+    line-height: 32.5px;
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .text-2 {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 22.5px;
+    line-height: 29.2px;
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .text-3 {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 25px;
+    line-height: 32.5px;
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .row-2 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  .shop-product .content-wrapper {
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #5b5b5b;
+  }
+  
+  .shop-product .text-4 {
+    font-family: "Space Grotesk-Regular", Helvetica;
+    font-weight: 400;
+    color: #d9d9d9;
+    font-size: 22.5px;
+    line-height: 29.2px;
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  
+  .shop-product .text-wrapper-3 a {
+    color: #d9d9d9; /* Ganti dengan warna yang Anda inginkan */
+    text-decoration: none; /* Untuk menghilangkan garis bawah */
+  }
+  
+  /* Untuk memberikan efek hover yang konsisten */
+  .shop-product .text-wrapper-3 a:hover {
+    color: rgb(130, 130, 130); /* Ganti dengan warna hover yang Anda inginkan */
+  }
+
+  .button-custom{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
