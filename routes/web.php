@@ -27,11 +27,6 @@ Route::get('/', function () {
     return view('home.index');
 });
 
-//tes nanti harus diapus
-Route::get('/oldhome', function () {
-    return view('home.index-old');
-});
-
 Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/about', function () {
