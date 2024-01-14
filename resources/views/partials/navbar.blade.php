@@ -2,7 +2,7 @@
     <div class="flex-1 text-xl text-warning font-semibold">
         <a href="/"><img src="img/white_dandelion.png" alt="" class="size-10 max-w-full max-h-full ms-7"></a>
         <div class="flex-1 ms-28">
-            <ul class="flex space-x-4">
+            <ul class="flex gap-6">
                 <li><a href="#" class="hover:underline">Home</a></li>
                 <li><a href="#" class="hover:underline">About</a></li>
                 <li><a href="#" class="hover:underline">Services</a></li>
