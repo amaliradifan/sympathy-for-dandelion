@@ -1,19 +1,20 @@
 @extends('layouts.main')
 @section('container')
-    <div class="grid place-items-center mt-10">
+    <div class="grid place-items-center mt-5">
         <img src="img/SFDLOGOWHITE.png" class="w-7/12" alt="">
         <a href="/shop" class="text-warning text-2xl font-bold mt-10 hover:underline">View All Products</a>
     </div>
     <div class="grid place-items-center text-2xl mt-28">
-        <h1 class="font-bold mb-5">🌼 Get To Know Sympathy For Dandelion🌼</h1>
-        <p class="w-2/3 text-center text-xl">At Sympathy for Dandelion, we're on a mission to make fashion not only beautiful
+        <div class="mb-5"><span class="font-bold" id="element"></span></div>
+        <p class="w-2/3 text-center text-xl">At Sympathy for Dandelion, we're on a mission to make fashion not only
+            beautiful
             but
             also
             sustainable. 🌿✨ We
             believe in celebrating the unique beauty and potential within each individual while also nurturing the planet we
             all call home. 🌎</p>
     </div>
-    <div class="grid grid-cols-3 place-items-center my-44 space-x-4">
+    <div class="grid grid-cols-3 place-items-center my-44 px-20">
         <a href="">
             <div class="card w-80 bg-base-100 shadow-xl transition-transform transform hover:scale-105">
                 <figure><img src="img/ContentBaju.jpg" alt="Shoes" />
@@ -54,7 +55,7 @@
             </div>
     </div></a>
     <div class="grid place-items-center text-2xl mt-28 mb-44">
-        <h1 class="font-bold mb-5">Why “Sympathy for Dandelion”? 🌼</h1>
+        <div class="mb-5"><span class="font-bold" id="element2"></span></div>
         <p class="w-2/3 text-center text-xl">Just like the resilient dandelion that thrives amidst life&#39;s challenges, we
             embrace the
             uniqueness in every individual. 🌱 And now, we&#39;re taking our commitment to nature one step
@@ -71,4 +72,17 @@
             <button class="btn bg-warning btn-warning join-item h-full">Subscribe</button>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['🌼 Get To Know Sympathy For Dandelion🌼'],
+            typeSpeed: 50,
+        });
+        var typed2 = new Typed('#element2', {
+            strings: ['Why “Sympathy for Dandelion”? 🌼'],
+            typeSpeed: 50,
+        });
+    </script>
 @endsection
