@@ -20,7 +20,7 @@
                 <figure><img src="img/ContentBaju.jpg" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                    <h2 class="card-title btn btn-active btn-ghost">T-shirt!</h2>
+                    <h2 class="card-title btn btn-active btn-ghost">T-shirts!</h2>
                     <p>Sympathy for Dandelion T-shirt Collections</p>
                     <div class="card-actions justify-end">
                         <button class="btn btn-warning bg-warning btn-active">Buy Now</button>
