@@ -1,437 +1,431 @@
 body {
-    font-family: "Space Grotesk", sans-serif;
-    background-color: #1f1f1f;
-    color: aliceblue;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 7%;
-    background-color: #1f1f1f;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 9999;
-    font-family: "Space Grotesk-Bold", Helvetica;
-  }
-  
-  .navbar .navbar-nav,
-  .navbar .navbar-extra {
-    display: flex;
-  }
-  
-  .navbar .navbar-nav a:hover {
-    color: #a6a6a6;
-  }
-  .navbar .navbar-nav a,
-  .navbar .navbar-extra a {
-    color: #ffe61b;
-    display: inline-block;
-    font-size: 23px;
-    margin: 0 1rem;
-    margin-top: 20px;
-    text-decoration: none;
-    position: relative;
-  }
-  
-  .navbar .navbar-nav a.active::after,
-  .navbar .navbar-extra a.active::after,
-  .navbar .navbar-nav a:hover::after,
-  .navbar .navbar-extra a:hover::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #ffe61b;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .navbar .navbar-nav a.active::after,
-  .navbar .navbar-extra a.active::after {
-    transform: scaleX(1);
-    transition: transform 0.2s linear;
-  }
-  
-  .navbar .navbar-nav a:hover::after,
-  .navbar .navbar-extra a:hover::after {
-    transform: scaleX(1);
-    transition: transform 0.2s linear;
-  }
-  
-  .navbar .navbar-extra {
-    margin-left: auto;
-  }
-  
-  .navbar .navbar-extra a:hover {
-    color: #a6a6a6;
-  }
-  
-  .account-address {
-    background-color: #1f1f1f;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .account-address .div {
-    background-color: #1f1f1f;
-    width: 1440px;
-    height: 1024px;
-    position: relative;
-  }
-  
-  .account-address .group {
-    position: absolute;
-    width: 299px;
-    height: 16px;
-    top: 58px;
-    left: 1018px;
-  }
-  
-  .account-address .group-2 {
-    position: relative;
-    height: 16px;
-  }
-  
-  .account-address .account {
-    width: 103px;
-    top: 0;
-    left: 114px;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .account-address .text-wrapper {
-    top: -1px;
-    left: 0;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe61b;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    text-decoration: underline;
-    white-space: nowrap;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .account-address .cart {
-    width: 52px;
-    top: 0;
-    left: 247px;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .account-address .text-wrapper-2 {
-    top: -1px;
-    left: 0;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe61b;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .account-address .search {
-    width: 84px;
-    top: 0;
-    position: absolute;
-    height: 16px;
-    left: 0;
-    border: none;
-    background: none;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe61b;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-    padding: 0;
-    padding-left: 0;
-  }
-  
-  .account-address .group-3 {
-    position: absolute;
-    width: 264px;
-    height: 16px;
-    top: 58px;
-    left: 122px;
-  }
-  
-  .account-address .group-4 {
-    position: absolute;
-    width: 166px;
-    height: 16px;
-    top: 0;
-    left: 98px;
-  }
-  
-  .account-address .shop {
-    width: 62px;
-    top: 0;
-    position: absolute;
-    height: 16px;
-    left: 0;
-  }
-  
-  .account-address .about {
-    width: 74px;
-    top: 0;
-    left: 92px;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .account-address .home {
-    position: absolute;
-    width: 68px;
-    height: 16px;
-    top: 0;
-    left: 0;
-  }
-  
-  .account-address .text-wrapper-3 {
-    position: absolute;
-    height: 16px;
-    top: 224px;
-    left: 569px;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #1f1f1f;
-    font-size: 25px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .account-address .group-5 {
-    position: absolute;
-    width: 1179px;
-    height: 428px;
-    top: 318px;
-    left: 130px;
-  }
-  
-  .account-address .group-6 {
-    position: relative;
-    width: 234px;
-    height: 20px;
-    top: 408px;
-    left: 0;
-  }
-  
-  .account-address .set-as-default {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .account-address .cb-sfd {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  }
-  
-  .account-address .text-wrapper-4 {
-    font-family: "Familjen Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .account-address .cb-sfd[disabled] {
-    opacity: 0.5; /* Mengganti opacity saat tombol dinonaktifkan */
-    cursor: not-allowed;
-  }
-  
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #1f1f1f;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
 
-  
-  
-  .account-address .group-7 {
-    position: absolute;
-    width: 1183px;
-    height: 112px;
-    top: 0;
-    left: 0;
-  }
-  
-  .account-address .group-8 {
-    position: absolute;
-    width: 1179px;
-    height: 86px;
-    top: 0;
-    left: 0;
-  }
-  
-  .account-address .group-9 {
-    position: absolute;
-    width: 577px;
-    height: 86px;
-    top: 0;
-    left: 0;
-  }
-  
-  .account-address .rectangle {
-    position: absolute;
-    width: 575px;
-    height: 54px;
-    top: 32px;
-    left: 0;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-  }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #1f1f1f;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  font-family: "Space Grotesk-Bold", Helvetica;
+}
 
+.navbar .navbar-nav,
+.navbar .navbar-extra {
+  display: flex;
+}
 
-    .rectangle-input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: none;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: normal;
-    color: #1f1f1f;
-    font-size: 20.5px;
-    letter-spacing: 0;
-    line-height: 16px;
-    padding: 0;
-    padding-left: 10px; 
-  }
-  
-  .account-address .text-wrapper-5 {
-    position: absolute;
-    width: 200px;
-    height: 16px;
-    top: 0;
-    left: 0;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .account-address .group-10 {
-    position: absolute;
-    width: 577px;
-    height: 86px;
-    top: 0;
-    left: 605px;
-  }
-  
-  .account-address .text-wrapper-6 {
-    position: absolute;
-    top: 96px;
-    left: 444px;
-    font-family: "Familjen Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffe61b;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .account-address .text-wrapper-7 {
-    position: absolute;
-    top: 96px;
-    left: 1048px;
-    font-family: "Familjen Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffe61b;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .account-address .group-11 {
-    position: absolute;
-    width: 1183px;
-    height: 112px;
-    top: 136px;
-    left: 0;
-  }
-  
-  .account-address .group-12 {
-    position: absolute;
-    width: 1183px;
-    height: 112px;
-    top: 272px;
-    left: 0;
-  }
-  
-  .account-address .button-address {
-    position: absolute;
-    width: 208px;
-    height: 55px;
-    top: 470px;
-    left: 10px;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-  }
-  
-  
-  .account-address .text-wrapper-8 {
-    position: absolute;
-    height: 16px;
-    top: 19px;
-    left: 28px;
-    font-family: "Space Grotesk-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #1f1f1f;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .account-address .back {
-    position: absolute;
-    width: 60px;
-    height: 16px;
-    top: 816px;
-    left: 1257px;
-  }
-  
-  .account-address .text-wrapper-9 {
-    width: 60px;
-    height: 8px;
-    top: 3px;
-    color: #d9d9d9;
-    position: absolute;
-    left: 0;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
+.navbar .navbar-nav a:hover {
+  color: #a6a6a6;
+}
+.navbar .navbar-nav a,
+.navbar .navbar-extra a {
+  color: #ffe61b;
+  display: inline-block;
+  font-size: 23px;
+  margin: 0 1rem;
+  margin-top: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar .navbar-nav a.active::after,
+.navbar .navbar-extra a.active::after,
+.navbar .navbar-nav a:hover::after,
+.navbar .navbar-extra a:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffe61b;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar .navbar-nav a.active::after,
+.navbar .navbar-extra a.active::after {
+  transform: scaleX(1);
+  transition: transform 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after,
+.navbar .navbar-extra a:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.2s linear;
+}
+
+.navbar .navbar-extra {
+  margin-left: auto;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #a6a6a6;
+}
+
+.account-address {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.account-address .div {
+  background-color: #1f1f1f;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.account-address .group {
+  position: absolute;
+  width: 299px;
+  height: 16px;
+  top: 58px;
+  left: 1018px;
+}
+
+.account-address .group-2 {
+  position: relative;
+  height: 16px;
+}
+
+.account-address .account {
+  width: 103px;
+  top: 0;
+  left: 114px;
+  position: absolute;
+  height: 16px;
+}
+
+.account-address .text-wrapper {
+  top: -1px;
+  left: 0;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffe61b;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-decoration: underline;
+  white-space: nowrap;
+  position: absolute;
+  height: 16px;
+}
+
+.account-address .cart {
+  width: 52px;
+  top: 0;
+  left: 247px;
+  position: absolute;
+  height: 16px;
+}
+
+.account-address .text-wrapper-2 {
+  top: -1px;
+  left: 0;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffe61b;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+  position: absolute;
+  height: 16px;
+}
+
+.account-address .search {
+  width: 84px;
+  top: 0;
+  position: absolute;
+  height: 16px;
+  left: 0;
+  border: none;
+  background: none;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffe61b;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+  padding: 0;
+  padding-left: 0;
+}
+
+.account-address .group-3 {
+  position: absolute;
+  width: 264px;
+  height: 16px;
+  top: 58px;
+  left: 122px;
+}
+
+.account-address .group-4 {
+  position: absolute;
+  width: 166px;
+  height: 16px;
+  top: 0;
+  left: 98px;
+}
+
+.account-address .shop {
+  width: 62px;
+  top: 0;
+  position: absolute;
+  height: 16px;
+  left: 0;
+}
+
+.account-address .about {
+  width: 74px;
+  top: 0;
+  left: 92px;
+  position: absolute;
+  height: 16px;
+}
+
+.account-address .home {
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  top: 0;
+  left: 0;
+}
+
+.account-address .text-wrapper-3 {
+  position: absolute;
+  height: 16px;
+  top: 224px;
+  left: 569px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #1f1f1f;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.account-address .group-5 {
+  position: absolute;
+  width: 1179px;
+  height: 428px;
+  top: 318px;
+  left: 130px;
+}
+
+.account-address .group-6 {
+  position: relative;
+  width: 234px;
+  height: 20px;
+  top: 408px;
+  left: 0;
+}
+
+.account-address .set-as-default {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.account-address .cb-sfd {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.account-address .text-wrapper-4 {
+  font-family: "Familjen Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.account-address .cb-sfd[disabled] {
+  opacity: 0.5; /* Mengganti opacity saat tombol dinonaktifkan */
+  cursor: not-allowed;
+}
+
+.account-address .group-7 {
+  position: absolute;
+  width: 1183px;
+  height: 112px;
+  top: 0;
+  left: 0;
+}
+
+.account-address .group-8 {
+  position: absolute;
+  width: 1179px;
+  height: 86px;
+  top: 0;
+  left: 0;
+}
+
+.account-address .group-9 {
+  position: absolute;
+  width: 577px;
+  height: 86px;
+  top: 0;
+  left: 0;
+}
+
+.account-address .rectangle {
+  position: absolute;
+  width: 575px;
+  height: 54px;
+  top: 32px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.rectangle-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: normal;
+  color: #1f1f1f;
+  font-size: 20.5px;
+  letter-spacing: 0;
+  line-height: 16px;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.account-address .text-wrapper-5 {
+  position: absolute;
+  width: 200px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.account-address .group-10 {
+  position: absolute;
+  width: 577px;
+  height: 86px;
+  top: 0;
+  left: 605px;
+}
+
+.account-address .text-wrapper-6 {
+  position: absolute;
+  top: 96px;
+  left: 444px;
+  font-family: "Familjen Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffe61b;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.account-address .text-wrapper-7 {
+  position: absolute;
+  top: 96px;
+  left: 1048px;
+  font-family: "Familjen Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffe61b;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.account-address .group-11 {
+  position: absolute;
+  width: 1183px;
+  height: 112px;
+  top: 136px;
+  left: 0;
+}
+
+.account-address .group-12 {
+  position: absolute;
+  width: 1183px;
+  height: 112px;
+  top: 272px;
+  left: 0;
+}
+
+.account-address .button-address {
+  position: absolute;
+  width: 208px;
+  height: 55px;
+  top: 470px;
+  left: 10px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.account-address .text-wrapper-8 {
+  position: absolute;
+  height: 16px;
+  top: 19px;
+  left: 28px;
+  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #1f1f1f;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.account-address .back {
+  position: absolute;
+  width: 60px;
+  height: 16px;
+  top: 816px;
+  left: 1257px;
+}
+
+.account-address .text-wrapper-9 {
+  width: 60px;
+  height: 8px;
+  top: 3px;
+  color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
