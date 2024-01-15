@@ -1,12 +1,12 @@
 <div class="navbar bg-base-100 sticky top-0 h-20" style="background-color: #1f1f1f; z-index: 1000;">
     <div class="flex-1 text-xl text-warning font-semibold">
-        <a href="/"><img src="img/white_dandelion.png" alt="" class="size-10 max-w-full max-h-full ms-7"></a>
+        <a href="/"><img src="{{ asset('img/white_dandelion.png') }}" alt=""
+                class="size-10 max-w-full max-h-full ms-7"></a>
         <div class="flex-1 ms-28">
             <ul class="flex gap-6">
                 <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="/products" class="hover:underline">Shop</a></li>
                 <li><a href="#" class="hover:underline">About</a></li>
-                <li><a href="#" class="hover:underline">Services</a></li>
-                <!-- Tambahkan item navigasi sesuai kebutuhan Anda -->
             </ul>
         </div>
     </div>
