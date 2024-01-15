@@ -1,631 +1,630 @@
 body {
-    font-family: "Space Grotesk", sans-serif;
-    background-color: #1f1f1f;
-    color: aliceblue;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 7%;
-    background-color: #1f1f1f;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 9999;
-    font-family: "Space Grotesk-Bold", Helvetica;
-  }
-  
-  .navbar .navbar-nav,
-  .navbar .navbar-extra {
-    display: flex;
-  }
-  
-  .navbar .navbar-nav a:hover {
-    color: #ffe61b;
-  }
-  .navbar .navbar-nav a,
-  .navbar .navbar-extra a {
-    color: #ffe61b;
-    display: inline-block;
-    font-size: 23px;
-    margin: 0 1rem;
-    margin-top: 20px;
-    text-decoration: none;
-    position: relative;
-  }
-  
-  .navbar .navbar-nav a.active::after,
-  .navbar .navbar-extra a.active::after,
-  .navbar .navbar-nav a:hover::after,
-  .navbar .navbar-extra a:hover::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #ffe61b;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .navbar .navbar-nav a.active::after,
-  .navbar .navbar-extra a.active::after {
-    transform: scaleX(1);
-    transition: transform 0.2s linear;
-  }
-  
-  .navbar .navbar-nav a:hover::after,
-  .navbar .navbar-extra a:hover::after {
-    transform: scaleX(1);
-    transition: transform 0.2s linear;
-  }
-  
-  .navbar .navbar-extra {
-    margin-left: auto;
-  }
-  
-  .navbar .navbar-extra a:hover {
-    color: #ffe61b;
-  }
-  .sign-up .div {
-    background-color: #1f1f1f;
-    width: 1440px;
-    height: 1631px;
-    position: relative;
-  }
-  
-  .rectangle input {
-    border: none;
-    background: none;
-    outline: none; /* Menghilangkan garis fokus saat diklik */
-    padding-top: 10px;
-  }
-  
-  /* Menambahkan gaya teks pada input */
-  .rectangle input[type="text"] {
-    font-size: 23px; /* Sesuaikan ukuran teks sesuai keinginan */
-    color: #333; /* Sesuaikan warna teks sesuai keinginan */
-  }
-  
-  .text-wrapper-8 input {
-    border: none;
-    background: none;
-    outline: none; /* Menghilangkan garis fokus saat diklik */
-  }
-  
-  /* Menambahkan gaya teks pada input */
-  .text-wrapper-8 input[type="text"] {
-    font-size: 16px; /* Sesuaikan ukuran teks sesuai keinginan */
-    color: #333; /* Sesuaikan warna teks sesuai keinginan */
-  }
-  
-  .text-wrapper-14 a,
-  .text-wrapper-14 a:hover {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Set the color to inherit from the parent */
-    outline: none; /* Remove the blue outline on click */
-  }
-  
-  .text-wrapper-14 a:hover {
-    text-decoration: none; /* Remove underline on hover */
-    color: inherit; /* Set the color on hover to inherit from the parent */
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .sign-up .group {
-    position: absolute;
-    width: 299px;
-    height: 16px;
-    top: 58px;
-    left: 1018px;
-  }
-  
-  .sign-up .group-2 {
-    position: relative;
-    height: 16px;
-  }
-  
-  .sign-up .account {
-    width: 103px;
-    top: 0;
-    left: 114px;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .sign-up .text-wrapper {
-    top: -1px;
-    left: 0;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe61b;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    text-decoration: underline;
-    white-space: nowrap;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .sign-up .cart {
-    width: 52px;
-    top: 0;
-    left: 247px;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .sign-up .text-wrapper-2 {
-    top: -1px;
-    left: 0;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe61b;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-    position: absolute;
-    height: 16px;
-  }
-  
-  .sign-up .search {
-    width: 84px;
-    top: 0;
-    position: absolute;
-    height: 16px;
-    left: 0;
-    border: none;
-    background: none;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe61b;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-    padding: 0;
-    padding-left: 0;
-  }
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #1f1f1f;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
 
-  .overlap-group-2:hover{
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  
-  .sign-up .group-3 {
-    position: absolute;
-    width: 1181px;
-    height: 149px;
-    top: 1267px;
-    left: 129px;
-  }
-  
-  .sign-up .SFD-logo-white {
-    position: absolute;
-    width: 229px;
-    height: 149px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
-  
-  .sign-up .group-4 {
-    position: absolute;
-    width: 134px;
-    height: 144px;
-    top: 0;
-    left: 429px;
-  }
-  
-  .sign-up .text-wrapper-3 {
-    position: absolute;
-    height: 32px;
-    top: 0;
-    left: 0;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #d9d9d9;
-    font-size: 25px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .group-5 {
-    position: absolute;
-    width: 138px;
-    height: 87px;
-    top: 57px;
-    left: 0;
-  }
-  
-  .sign-up .text-wrapper-4 {
-    position: absolute;
-    height: 29px;
-    top: 0;
-    left: 0;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .text-wrapper-5 {
-    position: absolute;
-    height: 29px;
-    top: 58px;
-    left: 2px;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .text-wrapper-6 {
-    position: absolute;
-    height: 29px;
-    top: 29px;
-    left: 2px;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .group-6 {
-    position: absolute;
-    width: 121px;
-    height: 115px;
-    top: 0;
-    left: 761px;
-  }
-  
-  .sign-up .group-7 {
-    position: absolute;
-    width: 123px;
-    height: 58px;
-    top: 57px;
-    left: 0;
-  }
-  
-  .sign-up .text-wrapper-7 {
-    position: absolute;
-    height: 29px;
-    top: 29px;
-    left: 0;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .group-8 {
-    position: absolute;
-    width: 103px;
-    height: 105px;
-    top: 0;
-    left: 1080px;
-  }
-  
-  .sign-up .group-9 {
-    position: absolute;
-    width: 101px;
-    height: 48px;
-    top: 57px;
-    left: 0;
-  }
-  
-  .sign-up .icon-instagram {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    top: 0;
-    left: 53px;
-  }
-  
-  .sign-up .icon-whatsapp {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    top: 0;
-    left: 0;
-  }
-  
-  .sign-up .copyright {
-    position: absolute;
-    width: 460px;
-    height: 57px;
-    top: 1515px;
-    left: 490px;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .group-10 {
-    position: absolute;
-    width: 1192px;
-    height: 61px;
-    top: 1006px;
-    left: 124px;
-  }
-  
-  .sign-up .group-11 {
-    position: absolute;
-    width: 596px;
-    height: 61px;
-    top: 0;
-    left: 0;
-  }
-  
-  .sign-up .p {
-    position: absolute;
-    height: 29px;
-    top: 32px;
-    left: 0;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .overlap-group-wrapper {
-    position: absolute;
-    width: 552px;
-    height: 50px;
-    top: 7px;
-    left: 642px;
-  }
-  
-  .sign-up .overlap-group {
-    position: relative;
-    width: 550px;
-    height: 50px;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-  }
-  
-  .sign-up .text-wrapper-8 {
-    position: absolute;
-    height: 16px;
-    top: 17px;
-    left: 22px;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #1f1f1f80;
-    font-size: 22.5px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .sign-up .vector {
-    position: absolute;
-    width: 27px;
-    height: 20px;
-    top: 15px;
-    left: 502px;
-  }
-  
-  .sign-up .group-12 {
-    position: absolute;
-    width: 264px;
-    height: 16px;
-    top: 58px;
-    left: 300px;
-  }
-  
-  .sign-up .shop {
-    position: absolute;
-    width: 62px;
-    height: 16px;
-    top: 0;
-    left: 98px;
-  }
-  
-  .sign-up .about {
-    position: absolute;
-    width: 74px;
-    height: 16px;
-    top: 0;
-    left: 190px;
-  }
-  
-  .sign-up .home {
-    position: absolute;
-    width: 68px;
-    height: 16px;
-    top: 0;
-    left: 0;
-  }
-  
-  .sign-up .text-wrapper-9 {
-    position: absolute;
-    height: 16px;
-    top: 223px;
-    left: 748px;
-    font-family: "Space Grotesk-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #ffe61b;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .sign-up .group-13 {
-    position: absolute;
-    width: 577px;
-    height: 86px;
-    top: 317px;
-    left: 500px;
-  }
-  
-  .sign-up .rectangle {
-    position: absolute;
-    width: 575px;
-    height: 54px;
-    top: 32px;
-    left: 0;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-  }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #1f1f1f;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  font-family: "Space Grotesk-Bold", Helvetica;
+}
 
-  .sign-up .rectangle input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: none;
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: normal;
-    color: #1f1f1f;
-    font-size: 22.5px;
-    letter-spacing: 0;
-    line-height: 16px;
-    padding: 0;
-    padding-left: 10px; /* Sesuaikan sesuai kebutuhan */
-    outline: none; /* Menghilangkan garis fokus saat diklik */
+.navbar .navbar-nav,
+.navbar .navbar-extra {
+  display: flex;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ffe61b;
+}
+.navbar .navbar-nav a,
+.navbar .navbar-extra a {
+  color: #ffe61b;
+  display: inline-block;
+  font-size: 23px;
+  margin: 0 1rem;
+  margin-top: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar .navbar-nav a.active::after,
+.navbar .navbar-extra a.active::after,
+.navbar .navbar-nav a:hover::after,
+.navbar .navbar-extra a:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffe61b;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar .navbar-nav a.active::after,
+.navbar .navbar-extra a.active::after {
+  transform: scaleX(1);
+  transition: transform 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after,
+.navbar .navbar-extra a:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.2s linear;
+}
+
+.navbar .navbar-extra {
+  margin-left: auto;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #ffe61b;
+}
+.sign-up .div {
+  background-color: #1f1f1f;
+  width: 1440px;
+  height: 1631px;
+  position: relative;
+}
+
+.rectangle input {
+  border: none;
+  background: none;
+  outline: none; /* Menghilangkan garis fokus saat diklik */
+  padding-top: 10px;
+}
+
+/* Menambahkan gaya teks pada input */
+.rectangle input[type="text"] {
+  font-size: 23px; /* Sesuaikan ukuran teks sesuai keinginan */
+  color: #333; /* Sesuaikan warna teks sesuai keinginan */
+}
+
+.text-wrapper-8 input {
+  border: none;
+  background: none;
+  outline: none; /* Menghilangkan garis fokus saat diklik */
+}
+
+/* Menambahkan gaya teks pada input */
+.text-wrapper-8 input[type="text"] {
+  font-size: 16px; /* Sesuaikan ukuran teks sesuai keinginan */
+  color: #333; /* Sesuaikan warna teks sesuai keinginan */
+}
+
+.text-wrapper-14 a,
+.text-wrapper-14 a:hover {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Set the color to inherit from the parent */
+  outline: none; /* Remove the blue outline on click */
+}
+
+.text-wrapper-14 a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: inherit; /* Set the color on hover to inherit from the parent */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sign-up .group {
+  position: absolute;
+  width: 299px;
+  height: 16px;
+  top: 58px;
+  left: 1018px;
+}
+
+.sign-up .group-2 {
+  position: relative;
+  height: 16px;
+}
+
+.sign-up .account {
+  width: 103px;
+  top: 0;
+  left: 114px;
+  position: absolute;
+  height: 16px;
+}
+
+.sign-up .text-wrapper {
+  top: -1px;
+  left: 0;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffe61b;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-decoration: underline;
+  white-space: nowrap;
+  position: absolute;
+  height: 16px;
+}
+
+.sign-up .cart {
+  width: 52px;
+  top: 0;
+  left: 247px;
+  position: absolute;
+  height: 16px;
+}
+
+.sign-up .text-wrapper-2 {
+  top: -1px;
+  left: 0;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffe61b;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+  position: absolute;
+  height: 16px;
+}
+
+.sign-up .search {
+  width: 84px;
+  top: 0;
+  position: absolute;
+  height: 16px;
+  left: 0;
+  border: none;
+  background: none;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffe61b;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+  padding: 0;
+  padding-left: 0;
+}
+
+.overlap-group-2:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.sign-up .group-3 {
+  position: absolute;
+  width: 1181px;
+  height: 149px;
+  top: 1267px;
+  left: 129px;
+}
+
+.sign-up .SFD-logo-white {
+  position: absolute;
+  width: 229px;
+  height: 149px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.sign-up .group-4 {
+  position: absolute;
+  width: 134px;
+  height: 144px;
+  top: 0;
+  left: 429px;
+}
+
+.sign-up .text-wrapper-3 {
+  position: absolute;
+  height: 32px;
+  top: 0;
+  left: 0;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #d9d9d9;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .group-5 {
+  position: absolute;
+  width: 138px;
+  height: 87px;
+  top: 57px;
+  left: 0;
+}
+
+.sign-up .text-wrapper-4 {
+  position: absolute;
+  height: 29px;
+  top: 0;
+  left: 0;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .text-wrapper-5 {
+  position: absolute;
+  height: 29px;
+  top: 58px;
+  left: 2px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .text-wrapper-6 {
+  position: absolute;
+  height: 29px;
+  top: 29px;
+  left: 2px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .group-6 {
+  position: absolute;
+  width: 121px;
+  height: 115px;
+  top: 0;
+  left: 761px;
+}
+
+.sign-up .group-7 {
+  position: absolute;
+  width: 123px;
+  height: 58px;
+  top: 57px;
+  left: 0;
+}
+
+.sign-up .text-wrapper-7 {
+  position: absolute;
+  height: 29px;
+  top: 29px;
+  left: 0;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .group-8 {
+  position: absolute;
+  width: 103px;
+  height: 105px;
+  top: 0;
+  left: 1080px;
+}
+
+.sign-up .group-9 {
+  position: absolute;
+  width: 101px;
+  height: 48px;
+  top: 57px;
+  left: 0;
+}
+
+.sign-up .icon-instagram {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 53px;
+}
+
+.sign-up .icon-whatsapp {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.sign-up .copyright {
+  position: absolute;
+  width: 460px;
+  height: 57px;
+  top: 1515px;
+  left: 490px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .group-10 {
+  position: absolute;
+  width: 1192px;
+  height: 61px;
+  top: 1006px;
+  left: 124px;
+}
+
+.sign-up .group-11 {
+  position: absolute;
+  width: 596px;
+  height: 61px;
+  top: 0;
+  left: 0;
+}
+
+.sign-up .p {
+  position: absolute;
+  height: 29px;
+  top: 32px;
+  left: 0;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .overlap-group-wrapper {
+  position: absolute;
+  width: 552px;
+  height: 50px;
+  top: 7px;
+  left: 642px;
+}
+
+.sign-up .overlap-group {
+  position: relative;
+  width: 550px;
+  height: 50px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.sign-up .text-wrapper-8 {
+  position: absolute;
+  height: 16px;
+  top: 17px;
+  left: 22px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #1f1f1f80;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.sign-up .vector {
+  position: absolute;
+  width: 27px;
+  height: 20px;
+  top: 15px;
+  left: 502px;
+}
+
+.sign-up .group-12 {
+  position: absolute;
+  width: 264px;
+  height: 16px;
+  top: 58px;
+  left: 300px;
+}
+
+.sign-up .shop {
+  position: absolute;
+  width: 62px;
+  height: 16px;
+  top: 0;
+  left: 98px;
+}
+
+.sign-up .about {
+  position: absolute;
+  width: 74px;
+  height: 16px;
+  top: 0;
+  left: 190px;
+}
+
+.sign-up .home {
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  top: 0;
+  left: 0;
+}
+
+.sign-up .text-wrapper-9 {
+  position: absolute;
+  height: 16px;
+  top: 223px;
+  left: 748px;
+  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffe61b;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.sign-up .group-13 {
+  position: absolute;
+  width: 577px;
+  height: 86px;
+  top: 317px;
+  left: 500px;
+}
+
+.sign-up .rectangle {
+  position: absolute;
+  width: 575px;
+  height: 54px;
+  top: 32px;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.sign-up .rectangle input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: normal;
+  color: #1f1f1f;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: 16px;
+  padding: 0;
+  padding-left: 10px; /* Sesuaikan sesuai kebutuhan */
+  outline: none; /* Menghilangkan garis fokus saat diklik */
 }
 
 .sign-up .rectangle input:focus {
-    border: none; /* Menghilangkan garis fokus saat input aktif */
+  border: none; /* Menghilangkan garis fokus saat input aktif */
 }
-  
-  .sign-up .text-wrapper-10 {
-    position: absolute;
-    height: 16px;
-    top: 0;
-    left: 0;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .sign-up .group-14 {
-    position: absolute;
-    width: 577px;
-    height: 86px;
-    top: 433px;
-    left: 500px;
-  }
-  
-  .sign-up .text-wrapper-11 {
-    position: absolute;
-    width: 121px;
-    height: 17px;
-    top: 0;
-    left: 0;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: #d9d9d9;
-    font-size: 22.5px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .sign-up .group-15 {
-    position: absolute;
-    width: 577px;
-    height: 86px;
-    top: 549px;
-    left: 500px;
-  }
-  
-  .sign-up .group-wrapper {
-    position: absolute;
-    width: 575px;
-    height: 54px;
-    top: 705px;
-    left: 500px;
-  }
-  
-  .sign-up .div-wrapper {
-    width: 577px;
-    height: 54px;
-  }
-  
-  .sign-up .overlap-group-2 {
-    position: relative;
-    width: 575px;
-    height: 54px;
-    background-color: #ffe61b;
-    border-radius: 10px;
-  }
-  
-  .sign-up .text-wrapper-12 {
-    position: absolute;
-    height: 16px;
-    top: 19px;
-    left: 250px;
-    font-family: "Space Grotesk-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #1f1f1f;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 16px;
-    white-space: nowrap;
-  }
-  
-  .sign-up .already-have-an {
-    position: absolute;
-    top: 778px;
-    left: 638px;
-    font-family: "Space Grotesk-Regular", Helvetica;
-    font-weight: 400;
-    color: transparent;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .sign-up .span {
-    color: #d9d9d9;
-  }
-  
-  .sign-up .text-wrapper-13 {
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #d9d9d9;
-  }
-  
-  .sign-up .text-wrapper-14 {
-    font-family: "Space Grotesk-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe61b;
-  }
-  
+
+.sign-up .text-wrapper-10 {
+  position: absolute;
+  height: 16px;
+  top: 0;
+  left: 0;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.sign-up .group-14 {
+  position: absolute;
+  width: 577px;
+  height: 86px;
+  top: 433px;
+  left: 500px;
+}
+
+.sign-up .text-wrapper-11 {
+  position: absolute;
+  width: 121px;
+  height: 17px;
+  top: 0;
+  left: 0;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: #d9d9d9;
+  font-size: 22.5px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.sign-up .group-15 {
+  position: absolute;
+  width: 577px;
+  height: 86px;
+  top: 549px;
+  left: 500px;
+}
+
+.sign-up .group-wrapper {
+  position: absolute;
+  width: 575px;
+  height: 54px;
+  top: 705px;
+  left: 500px;
+}
+
+.sign-up .div-wrapper {
+  width: 577px;
+  height: 54px;
+}
+
+.sign-up .overlap-group-2 {
+  position: relative;
+  width: 575px;
+  height: 54px;
+  background-color: #ffe61b;
+  border-radius: 10px;
+}
+
+.sign-up .text-wrapper-12 {
+  position: absolute;
+  height: 16px;
+  top: 19px;
+  left: 250px;
+  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #1f1f1f;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.sign-up .already-have-an {
+  position: absolute;
+  top: 778px;
+  left: 638px;
+  font-family: "Space Grotesk-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.sign-up .span {
+  color: #d9d9d9;
+}
+
+.sign-up .text-wrapper-13 {
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #d9d9d9;
+}
+
+.sign-up .text-wrapper-14 {
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffe61b;
+}
