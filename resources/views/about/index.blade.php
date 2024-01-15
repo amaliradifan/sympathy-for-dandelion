@@ -22,7 +22,7 @@
            @auth
            <a href="/profile" class="nav-link" data-target="account"><b>Account</b></a>
            @else 
-           <a href="/signin" class="nav-link" data-target="account"><b>SignIn</b></a>
+           <a href="/signin" class="nav-link" data-target="account"><b>Sign In</b></a>
            @endauth
             <a href="/cart" class="nav-link" data-target="cart"><b>Cart</b></a>
         </div>
