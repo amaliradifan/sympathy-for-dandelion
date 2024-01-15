@@ -25,7 +25,7 @@
   width: 60px;
   height: 8px;
   top: 3px;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   font-size: 25px;
   position: absolute;
@@ -47,7 +47,7 @@
 .cart .text-wrapper-2 {
   top: -1px;
   left: 0;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   color: #ffe61b;
   font-size: 25px;
@@ -81,7 +81,7 @@
   height: 16px;
   top: 0;
   left: 0;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -96,7 +96,7 @@
   height: 16px;
   top: 77px;
   left: 0;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -110,7 +110,7 @@
   height: 16px;
   top: 113px;
   left: 0;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -124,7 +124,7 @@
   height: 16px;
   top: 149px;
   left: 0;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -170,7 +170,7 @@
   height: 16px;
   top: 2px;
   left: 35px;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -208,7 +208,7 @@
   height: 16px;
   top: 2px;
   left: 35px;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -222,7 +222,7 @@
   height: 16px;
   top: 2px;
   left: 235px;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -243,7 +243,7 @@
   height: 16px;
   top: 2px;
   left: 235px;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -289,7 +289,7 @@
   width: 124px;
   height: 12px;
   top: 0;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   font-size: 22.5px;
   text-align: center;
@@ -307,7 +307,7 @@
   height: 12px;
   top: 0;
   left: 156px;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -323,7 +323,7 @@
   height: 12px;
   top: 0;
   left: 328px;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -371,7 +371,7 @@
   height: 12px;
   top: 52px;
   left: 115px;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -384,7 +384,7 @@
 .cart .text-wrapper-15 {
   top: 52px;
   left: 426px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   position: absolute;
   width: 195px;
@@ -400,7 +400,7 @@
 .cart .text-wrapper-16 {
   top: 52px;
   left: 742px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   position: absolute;
   width: 195px;
@@ -427,7 +427,7 @@
   height: 29px;
   top: 0;
   left: 0;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -442,7 +442,7 @@
   height: 16px;
   top: 83px;
   left: 125px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -471,7 +471,7 @@
   height: 16px;
   top: 2px;
   left: 0;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -509,7 +509,7 @@
   height: 16px;
   top: 2px;
   left: 35px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -523,7 +523,7 @@
   height: 16px;
   top: 32px;
   left: 35px;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -555,7 +555,7 @@
   height: 12px;
   top: 0;
   left: 0;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -566,7 +566,7 @@
 }
 
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background-color: #1f1f1f;
   color: aliceblue;
   margin: 0;
@@ -576,7 +576,7 @@ body {
 .cart .text-wrapper-23 {
   top: 0;
   left: 170px;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   position: absolute;
   width: 195px;
@@ -606,7 +606,7 @@ body {
   height: 55px;
   top: 19px;
   left: 0;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #1f1f1f;
   font-size: 25px;

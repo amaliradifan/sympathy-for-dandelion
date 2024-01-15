@@ -28,6 +28,7 @@ Route::get('/', function () {
 });
 
 Route::get('/products', [ProductController::class, 'index']);
+Route::get('/oldproducts', [ProductController::class, 'indexold']);
 
 Route::get('/about', function () {
     return view('about.index');

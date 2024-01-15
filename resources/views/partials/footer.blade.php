@@ -1,6 +1,6 @@
 <footer class="footer p-10 grid grid-cols-5 text-xl" style="background-color: #1f1f1f; color: #d9d9d9">
     <aside class="col-span-2 ps-16 mt-[-20px]">
-        <img src="img/SFDLOGOWHITE.png" alt="" class="w-7/12">
+        <img src="{{ asset('img/SFDLOGOWHITE.png') }}" alt="" class="w-7/12">
     </aside>
     <nav class="col-span-1">
         <header class="footer-title">Shop</header>

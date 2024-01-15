@@ -1,5 +1,5 @@
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background-color: #1f1f1f;
   color: aliceblue;
   margin: 0;
@@ -18,7 +18,7 @@ body {
   top: 0;
   right: 0;
   z-index: 9999;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
 }
 
 .navbar .navbar-nav,
@@ -44,7 +44,7 @@ body {
 .navbar .navbar-extra a.active::after,
 .navbar .navbar-nav a:hover::after,
 .navbar .navbar-extra a:hover::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;
@@ -113,7 +113,7 @@ body {
 .account-address .text-wrapper {
   top: -1px;
   left: 0;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   color: #ffe61b;
   font-size: 25px;
@@ -136,7 +136,7 @@ body {
 .account-address .text-wrapper-2 {
   top: -1px;
   left: 0;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   color: #ffe61b;
   font-size: 25px;
@@ -155,7 +155,7 @@ body {
   left: 0;
   border: none;
   background: none;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   color: #ffe61b;
   font-size: 25px;
@@ -211,7 +211,7 @@ body {
   height: 16px;
   top: 224px;
   left: 569px;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   color: #1f1f1f;
   font-size: 25px;
@@ -252,7 +252,7 @@ body {
 }
 
 .account-address .text-wrapper-4 {
-  font-family: "Familjen Grotesk-Regular", Helvetica;
+  font-family: 'Familjen Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -306,7 +306,7 @@ body {
   height: 100%;
   border: none;
   background: none;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: normal;
   color: #1f1f1f;
   font-size: 20.5px;
@@ -322,7 +322,7 @@ body {
   height: 16px;
   top: 0;
   left: 0;
-  font-family: "Space Grotesk-Regular", Helvetica;
+  font-family: 'Space Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #d9d9d9;
   font-size: 22.5px;
@@ -343,7 +343,7 @@ body {
   position: absolute;
   top: 96px;
   left: 444px;
-  font-family: "Familjen Grotesk-Regular", Helvetica;
+  font-family: 'Familjen Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #ffe61b;
   font-size: 22.5px;
@@ -357,7 +357,7 @@ body {
   position: absolute;
   top: 96px;
   left: 1048px;
-  font-family: "Familjen Grotesk-Regular", Helvetica;
+  font-family: 'Familjen Grotesk-Regular', Helvetica;
   font-weight: 400;
   color: #ffe61b;
   font-size: 22.5px;
@@ -398,7 +398,7 @@ body {
   height: 16px;
   top: 19px;
   left: 28px;
-  font-family: "Space Grotesk-SemiBold", Helvetica;
+  font-family: 'Space Grotesk-SemiBold', Helvetica;
   font-weight: 600;
   color: #1f1f1f;
   font-size: 25px;
@@ -422,7 +422,7 @@ body {
   color: #d9d9d9;
   position: absolute;
   left: 0;
-  font-family: "Space Grotesk-Bold", Helvetica;
+  font-family: 'Space Grotesk-Bold', Helvetica;
   font-weight: 700;
   font-size: 25px;
   letter-spacing: 0;
