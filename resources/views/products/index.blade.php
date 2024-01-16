@@ -20,10 +20,10 @@
             </div>
             <div class="col-span-9 grid grid-cols-3">
                 @foreach ($products as $product)
-                    <a href="products/{{ $product->id }}">
+                    <a href="/products/{{ $product->id }}">
                         <div
                             class="card w-80 bg-base-100 mb-10 bg-transparent overflow-hidden group transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-warning/50">
-                            <img src="img/sunback.png" alt="Shoes" class="w-full rounded-lg">
+                            <img src="{{ asset("img/$product->Image") }}" alt="Shoes" class="w-full rounded-lg">
                             <div class="card-body px-4 pt-5">
                                 <h2 class="card-title text-2xl">{{ $product->name }}</h2>
                                 <p class="text-xl font-medium">{{ $product->category->Name }}</p>
