@@ -17,12 +17,12 @@
         <div class="grid justify-items-center mb-16">
             <div class="grid grid-cols-3 w-5/6">
                 <div class="col-span-1 ">
-                    <img src="{{ asset("img/$product->Image") }}" class="rounded-2xl" alt="">
+                    <img src="{{ asset("img/$product->image") }}" class="rounded-2xl" alt="">
                 </div>
                 <div class="col-span-2 ps-20">
                     <h1 class="text-5xl font-bold mb-3">{{ $product->name }}</h1>
-                    <h1 class="text-2xl font-medium mb-7">{{ $product->category->Name }}</h1>
-                    <h1 class="text-4xl font-semibold">Rp {{ $product->Price }}</h1>
+                    <h1 class="text-2xl font-medium mb-7">{{ $product->category->name }}</h1>
+                    <h1 class="text-4xl font-semibold">Rp {{ $product->price }}</h1>
                     <form action="">
                         <div class="mt-10 flex justify-between pe-28">
                             <input type="radio" aria-label="S"

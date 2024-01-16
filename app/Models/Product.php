@@ -2,12 +2,12 @@
 
 namespace App\Models;
 
-use App\Models\Chart;
+use App\Models\Cart;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Produk extends Model
+class Product extends Model
 {
 
     public function category()
@@ -17,7 +17,7 @@ class Produk extends Model
 
     public function carts()
     {
-        return $this->belongsToMany(Chart::class);
+        return $this->belongsToMany(Cart::class);
     }
 
     use HasFactory;

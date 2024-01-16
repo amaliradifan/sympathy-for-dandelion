@@ -23,11 +23,11 @@
                     <a href="/products/{{ $product->id }}">
                         <div
                             class="card w-80 bg-base-100 mb-10 bg-transparent overflow-hidden group transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-warning/50">
-                            <img src="{{ asset("img/$product->Image") }}" alt="Shoes" class="w-full rounded-lg">
+                            <img src="{{ asset("img/$product->image") }}" alt="Shoes" class="w-full rounded-lg">
                             <div class="card-body px-4 pt-5">
                                 <h2 class="card-title text-2xl">{{ $product->name }}</h2>
-                                <p class="text-xl font-medium">{{ $product->category->Name }}</p>
-                                <p>IDR {{ $product->Price }}</p>
+                                <p class="text-xl font-medium">{{ $product->category->name }}</p>
+                                <p>IDR {{ $product->price }}</p>
                             </div>
                         </div>
                     </a>
