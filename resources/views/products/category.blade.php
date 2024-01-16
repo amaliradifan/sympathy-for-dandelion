@@ -26,8 +26,8 @@
                             <img src="{{ asset('img/sunback.png') }}" alt="Shoes" class="w-full rounded-lg">
                             <div class="card-body px-4 pt-5">
                                 <h2 class="card-title text-2xl">{{ $product->name }}</h2>
-                                <p class="text-xl font-medium">{{ $product->category->Name }}</p>
-                                <p>IDR {{ $product->Price }}</p>
+                                <p class="text-xl font-medium">{{ $product->category->name }}</p>
+                                <p>IDR {{ $product->price }}</p>
                             </div>
                         </div>
                     </a>

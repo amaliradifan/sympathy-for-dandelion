@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Produk;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -10,25 +10,25 @@ class ProductController extends Controller
     public function index()
     {
         return view('products.index', [
-            'products' => Produk::All()
+            'products' => Product::All()
         ]);
     }
     public function indexold()
     {
         return view('products.index-old', [
-            'products' => Produk::All()
+            'products' => Product::All()
         ]);
     }
 
-    public function show(Produk $produk)
+    public function show(Product $produk)
     {
         return view('products.product', [
             'product' => $produk
         ]);
     }
-    public function showold(Produk $produk)
+    public function showold(Product $produk)
     {
-        return view('products.product-old', [
+        return view('products.product', [
             'product' => $produk
         ]);
     }
