@@ -26,4 +26,10 @@ class ProductController extends Controller
             'product' => $produk
         ]);
     }
+    public function showold(Produk $produk)
+    {
+        return view('products.product-old', [
+            'product' => $produk
+        ]);
+    }
 }

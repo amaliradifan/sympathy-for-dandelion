@@ -83,6 +83,7 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::post('/address', [AddressController::class, 'value'])->middleware('auth');
 
 Route::get('/products/{produk}', [ProductController::class, 'show']);
+Route::get('/productsold/{produk}', [ProductController::class, 'showold']);
 
 Route::post('/email', [EmailController::class, 'email']);
 
