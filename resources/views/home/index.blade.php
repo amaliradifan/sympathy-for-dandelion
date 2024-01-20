@@ -1,5 +1,23 @@
 @extends('layouts.main')
 @section('container')
+    @if (session()->has('loginSuccess'))
+        <div class="toast toast-top toast-end mt-20 transition ease-in-out delay-500" id="toast">
+            <div class="alert alert-success ps-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>{!! session('loginSuccess') !!}</span>
+                <button onclick="closeDiv()" class="btn btn-square btn-sm bg-transparent border-none ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    @endif
     <div class="grid place-items-center mt-5">
         <img src="img/SFDLOGOWHITE.png" class="w-7/12" alt="">
         <a href="/shop" class="text-warning text-2xl font-bold mt-10 hover:underline">View All Products</a>
@@ -11,7 +29,8 @@
             but
             also
             sustainable. 🌿✨ We
-            believe in celebrating the unique beauty and potential within each individual while also nurturing the planet we
+            believe in celebrating the unique beauty and potential within each individual while also nurturing the
+            planet we
             all call home. 🌎</p>
     </div>
     <div class="grid grid-cols-3 place-items-center my-44 px-20">
@@ -56,7 +75,8 @@
     </div></a>
     <div class="grid place-items-center text-2xl mt-28 mb-44">
         <div class="mb-5"><span class="font-bold" id="element2"></span></div>
-        <p class="w-2/3 text-center text-xl">Just like the resilient dandelion that thrives amidst life&#39;s challenges, we
+        <p class="w-2/3 text-center text-xl">Just like the resilient dandelion that thrives amidst life&#39;s
+            challenges, we
             embrace the
             uniqueness in every individual. 🌱 And now, we&#39;re taking our commitment to nature one step
             further. For every product you purchase,
@@ -77,3 +97,17 @@
         });
     </script>
 @endsection
+
+<script>
+    function hideDiv() {
+        var myDiv = document.getElementById("toast");
+        myDiv.style.display = "none";
+    }
+
+    function closeDiv() {
+        var myDiv = document.getElementById("toast");
+        myDiv.style.display = "none";
+    }
+
+    setTimeout(hideDiv, 10000);
+</script>

@@ -12,7 +12,7 @@
 
 <body style="background-color: #1f1f1f; color:#d9d9d9">
     @include('partials.navbar')
-    <main class="min-h-dvh">
+    <main>
         @yield('container')
     </main>
     @include('partials.footer')

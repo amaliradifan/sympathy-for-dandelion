@@ -4,9 +4,9 @@
                 class="size-10 max-w-full max-h-full ms-7"></a>
         <div class="flex-1 ms-28">
             <ul class="flex gap-6">
-                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="/" class="hover:underline">Home</a></li>
                 <li><a href="/products" class="hover:underline">Shop</a></li>
-                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="/about" class="hover:underline">About</a></li>
             </ul>
         </div>
     </div>
@@ -30,7 +30,7 @@
                         <span class="font-bold text-lg">{{ auth()->user()->carts->count() }} Items</span>
                         <span class="text-info">Subtotal: Rp{{ auth()->user()->carts->sum('total_costs') }}</span>
                         <div class="card-actions">
-                            <button class="btn btn-warning bg-warning btn-block">View cart</button>
+                            <a href="/cart" class="btn btn-warning bg-warning btn-block">View cart</a>
                         </div>
                     </div>
                 </div>
