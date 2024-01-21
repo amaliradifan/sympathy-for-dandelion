@@ -54,8 +54,9 @@
                                 class="text-2xl size-10 place-self-center font-bold text-center bg-warning btn btn-warning"
                                 onclick="decreaseQuantity(document.getElementById('quantityInput{{ $loop->iteration }}'))">-</button>
                             <input type="text" name="quantity" id="quantityInput{{ $loop->iteration }}"
-                                class="cart-quantity text-xl font-bold text-center" onchange="updateQuantity(this)"
-                                data-cartId="{{ $cart->id }}" value="{{ $cart->quantity }}">
+                                class="cart-quantity text-xl font-bold text-center rounded-lg"
+                                onchange="updateQuantity(this)" data-cartId="{{ $cart->id }}"
+                                value="{{ $cart->quantity }}">
                             <button
                                 class="text-2xl size-10 place-self-center font-bold text-center bg-warning btn btn-warning"
                                 onclick="increaseQuantity(document.getElementById('quantityInput{{ $loop->iteration }}'))">+</button>
