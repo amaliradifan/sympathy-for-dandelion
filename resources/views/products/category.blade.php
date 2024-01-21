@@ -9,13 +9,19 @@
             <div class="px-14 col-span-3">
                 <h2 class="text-3xl font-bold border-b-4 pb-3 border-warning mb-5">Category</h2>
                 <a href="/category/1">
-                    <h3 class="font-semibold text-2xl link link-hover hover:text-warning mb-1">T-Shirt</h3>
+                    <h3
+                        class="font-semibold text-2xl link link-hover hover:text-warning mb-1 {{ $category->id === 1 ? 'text-warning' : '' }}">
+                        T-Shirt</h3>
                 </a>
                 <a href="/category/2">
-                    <h3 class="font-semibold text-2xl link link-hover hover:text-warning mb-1">Accessories</h3>
+                    <h3
+                        class="font-semibold text-2xl link link-hover hover:text-warning mb-1 {{ $category->id === 2 ? 'text-warning' : '' }}">
+                        Accessories</h3>
                 </a>
                 <a href="/category/3">
-                    <h3 class="font-semibold text-2xl link link-hover hover:text-warning mb-1">Stationary</h3>
+                    <h3
+                        class="font-semibold text-2xl link link-hover hover:text-warning mb-1 {{ $category->id === 3 ? 'text-warning' : '' }}">
+                        Stationary</h3>
                 </a>
             </div>
             <div class="col-span-9 grid grid-cols-3">

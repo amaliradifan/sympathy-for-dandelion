@@ -87,12 +87,7 @@ Route::get('/productsold/{produk}', [ProductController::class, 'showold']);
 
 Route::post('/email', [EmailController::class, 'email']);
 
-Route::get('/category/{category}', function (Category $category) {
-    return view('products.category', [
-        "category" => $category,
-        "products" => $category->products
-    ]);
-});
+Route::get('/category/{category}', [ProductController::class, 'category']);
 
 Route::post('/cart', [CartController::class, 'addCart'])->middleware('auth');
 

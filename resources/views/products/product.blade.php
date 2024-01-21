@@ -13,6 +13,27 @@
 </style>
 @extends('layouts.main')
 @section('container')
+    @if (session()->has('success'))
+        <div class="grid justify-items-center">
+            <div role="alert" id="alert" class="alert shadow-lg w-5/6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 text-warning" fill="none"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                    <h3 class="font-bold">{{ session('success') }}</h3>
+                </div>
+                <a href="/cart" class="btn btn-sm text-warning hover:underline">See Cart</a>
+                <button onclick="closeDiv()" class="btn btn-square btn-sm bg-transparent border-none "><svg
+                        xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    @endif
     <div class="grid my-10 p-10">
         <div class="grid justify-items-center mb-16">
             <div class="grid grid-cols-3 w-5/6">
@@ -23,24 +44,32 @@
                     <h1 class="text-5xl font-bold mb-3">{{ $product->name }}</h1>
                     <h1 class="text-2xl font-medium mb-7">{{ $product->category->name }}</h1>
                     <h1 class="text-4xl font-semibold">Rp {{ $product->price }}</h1>
-                    <form action="">
+                    <form action="/cart" method="POST">
+                        @csrf
                         <div class="mt-10 flex justify-between pe-28">
                             <input type="radio" aria-label="S"
                                 class="btn btn-outline hover:btn-warning border-2 font-semibold size-20 text-2xl "
-                                name="size" />
+                                name="size" value="S" />
                             <input type="radio" aria-label="M"
                                 class="btn btn-outline hover:btn-warning border-2 font-semibold size-20 text-2xl "
-                                name="size" />
+                                name="size" value="M" />
                             <input type="radio" aria-label="L"
                                 class="btn btn-outline hover:btn-warning border-2 font-semibold size-20 text-2xl "
-                                name="size" />
+                                name="size" value="L" />
                             <input type="radio" aria-label="XL"
                                 class="btn btn-outline hover:btn-warning border-2 font-semibold size-20 text-2xl "
-                                name="size" />
+                                name="size" value="XL" />
                             <input type="radio" aria-label="XXL"
                                 class="btn btn-outline hover:btn-warning border-2 font-semibold size-20 text-2xl "
-                                name="size" />
+                                name="size" value="XXL" />
                         </div>
+                        @error('size')
+                            <p class="text-error mt-2">*{{ $message }}</p>
+                        @enderror
+                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                        <input type="hidden" name="total_costs" value="{{ $product->price }}">
+                        <input type="hidden" name="quantity" value="1">
+                        <input type="hidden" name="user_id" value="{{ auth()->id() }}">
                         <button type="submit"
                             class="btn btn-warning mt-24 w-40 size-14 text-xl bg-warning font-semibold">Add
                             To
@@ -146,3 +175,17 @@
         @include('partials.subscribe')
     </div>
 @endsection
+
+<script>
+    function hideDiv() {
+        var myDiv = document.getElementById("alert");
+        myDiv.style.display = "none";
+    }
+
+    function closeDiv() {
+        var myDiv = document.getElementById("alert");
+        myDiv.style.display = "none";
+    }
+
+    setTimeout(hideDiv, 6000);
+</script>
