@@ -34,10 +34,6 @@ Route::get('/about', function () {
     return view('about.index');
 });
 
-Route::get('/cart', function () {
-    return view('cart.index');
-})->middleware('auth');
-
 Route::get('/signin', function () {
     return view('account.index');
 })->name('login');
@@ -89,6 +85,9 @@ Route::post('/email', [EmailController::class, 'email']);
 
 Route::get('/category/{category}', [ProductController::class, 'category']);
 
+Route::get('/cart', [CartController::class, 'index'])->middleware('auth');
 Route::post('/cart', [CartController::class, 'addCart'])->middleware('auth');
+Route::delete('/cart/{cart}', [CartController::class, 'deleteCart'])->middleware('auth');
+Route::put('/cart', [CartController::class, 'updateCart'])->middleware('auth');
 
 Route::post('/payment', [PaymentController::class, 'addPayment']);
