@@ -56,8 +56,12 @@ class CartController extends Controller
         $request->validate([
             'quantity' => 'required|numeric|max:99|min:1',
         ]);
-        $cart = Cart::where('id', $request->cart_id);
-        $cart->update(['quantity' => $request->quantity]);
+        $cart = Cart::find($request->cart_id);
+        $price = $cart->product->price;
+        $cart->update([
+            'quantity' => $request->quantity,
+            'total_costs' => $request->quantity * $price
+        ]);
 
         return redirect('/cart');
     }
