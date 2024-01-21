@@ -11,14 +11,24 @@
                 <span>{{ session('loginErr') }}</span>
             </div>
         @endif
+        @if (session()->has('signupSuccess'))
+            <div role="alert" class="alert alert-success mb-5 w-5/12">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>{!! session('signupSuccess') !!}</span>
+            </div>
+        @endif
         <h1 class="text-center font-bold text-4xl text-warning mb-10">Sign In</h1>
         <div class="mb-3 form-control w-5/12">
             <form action="/signin" method="POST">
                 @csrf
                 <div class="w-full form-control mb-5">
                     <label class="label-text text-2xl font-medium mb-2" for="email">E-Mail</label>
-                    <input type="email" name="email" placeholder="Type Your Email"
-                        class="text-primary-content input input-bordered" style="background-color: #D9D9D9">
+                    <input type="email" name="email" value="{{ old('email') }}" placeholder="Type Your Email"
+                        class="text-primary-content input input-bordered" style="background-color: #D9D9D9" required>
                     @error('email')
                         <span class="text-error">*{{ $message }}</span>
                     @enderror
@@ -26,7 +36,7 @@
                 <div class="w-full form-control mb-14">
                     <label class="label-text text-2xl font-medium mb-2" for="email">Password</label>
                     <input type="password" name="password" id="password" placeholder="Type Your Password"
-                        class="text-primary-content input input-bordered" style="background-color: #D9D9D9">
+                        class="text-primary-content input input-bordered" style="background-color: #D9D9D9" required>
                     @error('password')
                         <span class="text-error">*{{ $message }}</span>
                     @enderror
