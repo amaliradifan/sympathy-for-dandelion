@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
@@ -17,6 +19,14 @@ class ProductController extends Controller
     {
         return view('products.index-old', [
             'products' => Product::All()
+        ]);
+    }
+
+    public function category(Category $category)
+    {
+        return view('products.category', [
+            "category" => $category,
+            "products" => $category->products
         ]);
     }
 

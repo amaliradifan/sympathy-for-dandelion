@@ -20,7 +20,7 @@
     @endif
     <div class="grid place-items-center mt-5">
         <img src="img/SFDLOGOWHITE.png" class="w-7/12" alt="">
-        <a href="/shop" class="text-warning text-2xl font-bold mt-10 hover:underline">View All Products</a>
+        <a href="/products" class="text-warning text-2xl font-bold mt-10 hover:underline">View All Products</a>
     </div>
     <div class="grid place-items-center text-2xl mt-28">
         <div class="mb-5"><span class="font-bold" id="element"></span></div>
