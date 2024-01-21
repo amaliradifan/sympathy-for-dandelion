@@ -5,9 +5,19 @@ namespace App\Http\Controllers;
 use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
+    public function index()
+    {
+        $user = Auth::user();
+        $carts = Cart::where('user_id', $user->id)->get();
+        return view('cart.index', [
+            'carts' => $carts
+        ]);
+    }
+
     public function addCart(Request $request)
     {
         $validateData = $request->validate([
@@ -38,6 +48,25 @@ class CartController extends Controller
 
         Cart::create($validateData);
 
-        return redirect('/')->with('success', 'Cart added successfully.');
+        return back()->with('success', "Product successfully added to your cart");
+    }
+
+    public function updateCart(Request $request)
+    {
+        $request->validate([
+            'quantity' => 'required|numeric|max:99|min:1',
+        ]);
+        $cart = Cart::where('id', $request->cart_id);
+        $cart->update(['quantity' => $request->quantity]);
+
+        return redirect('/cart');
+    }
+
+
+    public function deleteCart(Cart $cart)
+    {
+        $cart->delete();
+
+        return redirect()->back()->with('successDelete', "Item has been removed from your cart.");
     }
 }

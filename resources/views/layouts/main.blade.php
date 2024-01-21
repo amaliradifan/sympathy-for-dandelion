@@ -15,6 +15,7 @@
     <main>
         @yield('container')
     </main>
+    <div class="divider"></div>
     @include('partials.footer')
 </body>
 
