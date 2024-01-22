@@ -26,9 +26,9 @@
             </div>
             <div class="col-span-9 grid grid-cols-3">
                 @foreach ($products as $product)
-                    <a href="/products/{{ $product->id }}">
+                    <a href="/products/{{ $product->id }}" class="inline-block w-80 mb-10">
                         <div
-                            class="card w-80 bg-base-100 mb-10 bg-transparent overflow-hidden group transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-warning/50">
+                            class="card w-80 bg-base-100  bg-transparent overflow-hidden group transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-warning/80 hover:text-primary-content">
                             <img src="{{ asset('img/sunback.png') }}" alt="Shoes" class="w-full rounded-lg">
                             <div class="card-body px-4 pt-5">
                                 <h2 class="card-title text-2xl">{{ $product->name }}</h2>
@@ -40,5 +40,6 @@
                 @endforeach
             </div>
         </div>
+        <div class="grid justify-center">{{ $products->links() }}</div>
     </div>
 @endsection

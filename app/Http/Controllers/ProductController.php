@@ -12,7 +12,7 @@ class ProductController extends Controller
     public function index()
     {
         return view('products.index', [
-            'products' => Product::All()
+            'products' => Product::paginate(9)
         ]);
     }
     public function indexold()
@@ -26,7 +26,7 @@ class ProductController extends Controller
     {
         return view('products.category', [
             "category" => $category,
-            "products" => $category->products
+            "products" => $category->products()->paginate(9)
         ]);
     }
 
