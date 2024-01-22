@@ -12,7 +12,7 @@ class ProductController extends Controller
     public function index()
     {
         return view('products.index', [
-            'products' => Product::paginate(9)
+            'products' => Product::latest()->filter(request(['search']))->paginate(9)
         ]);
     }
     public function indexold()
@@ -26,7 +26,7 @@ class ProductController extends Controller
     {
         return view('products.category', [
             "category" => $category,
-            "products" => $category->products()->paginate(9)
+            "products" => $category->products()->filter(request(['search']))->paginate(9)
         ]);
     }
 
