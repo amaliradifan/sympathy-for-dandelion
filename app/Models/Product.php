@@ -9,6 +9,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Product extends Model
 {
+    public function scopeFilter($query, array $filters)
+    {
+        $query->when($filters['search'] ?? false, function ($query, $search) {
+            return $query->where('name', 'like', '%' . $search . '%')
+                ->orWhereHas('category', function ($query) use ($search) {
+                    $query->where('name', 'like', '%' . $search . '%');
+                })->orWhere('description', 'like', '%' . $search . '%');
+        });
+    }
 
     public function category()
     {
