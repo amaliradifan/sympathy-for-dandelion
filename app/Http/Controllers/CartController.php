@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
@@ -20,15 +19,12 @@ class CartController extends Controller
 
     public function addCart(Request $request)
     {
-        $validateData = $request->validate([
-            'user_id' => 'required',
+        $request->validate([
             'product_id' => 'required',
             'size' => 'required',
-            'quantity' => 'required',
-            'total_costs' => 'required',
         ]);
 
-        $user = $request->user_id;
+        $user = Auth::user()->id;
         $product = $request->product_id;
         $size = $request->size;
         $price = Product::where('id', $product)->value('price');
@@ -46,7 +42,13 @@ class CartController extends Controller
             return back()->with('success', "Product successfully added to your cart");
         }
 
-        Cart::create($validateData);
+        Cart::create([
+            'user_id' => $user,
+            'product_id' => $product,
+            'size' => $size,
+            'quantity' => 1,
+            'total_costs' => $price,
+        ]);
 
         return back()->with('success', "Product successfully added to your cart");
     }
@@ -54,8 +56,10 @@ class CartController extends Controller
     public function updateCart(Request $request)
     {
         $request->validate([
+            'cart_id' => 'required|exists:carts,id',
             'quantity' => 'required|numeric|max:99|min:1',
         ]);
+
         $cart = Cart::find($request->cart_id);
         $price = $cart->product->price;
         $cart->update([
@@ -65,7 +69,6 @@ class CartController extends Controller
 
         return redirect('/cart');
     }
-
 
     public function deleteCart(Cart $cart)
     {

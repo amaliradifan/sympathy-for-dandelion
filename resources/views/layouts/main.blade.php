@@ -8,6 +8,7 @@
     <title>Document | SFD</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('img/white_dandelion.ico') }}" />
     @vite('resources/css/app.css')
+    @livewireStyles
 </head>
 
 <body style="background-color: #1f1f1f; color:#d9d9d9">
@@ -17,6 +18,7 @@
     </main>
     <div class="divider"></div>
     @include('partials.footer')
+    @livewireScripts
 </body>
 
 </html>
